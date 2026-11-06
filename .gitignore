@@ -1,0 +1,12 @@
+# Arquivos locais das ferramentas de design (capturas, cache, rascunhos)
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/questions/
+.impeccable/review/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+node_modules/

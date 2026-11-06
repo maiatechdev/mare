@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T18:30:00-03:00",
+  "title": "Design System: M.A.R.É",
+  "extensions": {
+    "colorMeta": {
+      "papel": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "#F5F8F6",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#232424",
+          "#3E403F",
+          "#5C5E5D",
+          "#7B7E7C",
+          "#9D9F9D",
+          "#C3C4C3",
+          "#EEEFEE"
+        ]
+      },
+      "papel-2": {
+        "role": "neutral",
+        "displayName": "Papel de Ficha",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#7D7D7D",
+          "#9E9E9E",
+          "#C4C4C4",
+          "#EEEEEE"
+        ]
+      },
+      "pauta": {
+        "role": "neutral",
+        "displayName": "Pauta",
+        "canonical": "#DDEBE7",
+        "tonalRamp": [
+          "#090C0B",
+          "#202524",
+          "#3A4240",
+          "#56605D",
+          "#74807D",
+          "#97A19E",
+          "#BEC6C4",
+          "#EAF0EE"
+        ]
+      },
+      "margem": {
+        "role": "tertiary",
+        "displayName": "Margem Vermelha",
+        "canonical": "#C7362C",
+        "tonalRamp": [
+          "#210000",
+          "#4A0303",
+          "#761510",
+          "#A62820",
+          "#D0493D",
+          "#E9796B",
+          "#FFA99D",
+          "#FFDED4"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#13221E",
+        "tonalRamp": [
+          "#080C0B",
+          "#1E2624",
+          "#37433F",
+          "#52615D",
+          "#71817D",
+          "#94A29E",
+          "#BCC7C4",
+          "#E9F0EE"
+        ]
+      },
+      "tinta-2": {
+        "role": "neutral",
+        "displayName": "Tinta Clara",
+        "canonical": "#4A5D57",
+        "tonalRamp": [
+          "#070D0B",
+          "#1D2623",
+          "#36433F",
+          "#51625D",
+          "#6F827C",
+          "#93A39D",
+          "#BBC7C3",
+          "#E8F1EE"
+        ]
+      },
+      "linha": {
+        "role": "neutral",
+        "displayName": "Fio",
+        "canonical": "#C3D6D0",
+        "tonalRamp": [
+          "#080C0B",
+          "#1E2624",
+          "#37433F",
+          "#53615D",
+          "#71817C",
+          "#94A29E",
+          "#BCC7C3",
+          "#E9F0EE"
+        ]
+      },
+      "carimbo": {
+        "role": "primary",
+        "displayName": "Azul de Carimbo",
+        "canonical": "#1E3F7F",
+        "tonalRamp": [
+          "#030A1D",
+          "#122342",
+          "#273E6B",
+          "#3D5C97",
+          "#597CBD",
+          "#809FD6",
+          "#ADC5F0",
+          "#DFEFFF"
+        ]
+      },
+      "boia": {
+        "role": "secondary",
+        "displayName": "Laranja de Boia",
+        "canonical": "#D9530F",
+        "tonalRamp": [
+          "#200000",
+          "#480800",
+          "#741C00",
+          "#A33000",
+          "#CC5016",
+          "#E67E56",
+          "#FFAD8E",
+          "#FFE0CB"
+        ]
+      },
+      "boia-texto": {
+        "role": "secondary",
+        "displayName": "Laranja de Boia para Texto",
+        "canonical": "#A8400B",
+        "tonalRamp": [
+          "#1D0200",
+          "#431100",
+          "#6C2705",
+          "#983E14",
+          "#C05C33",
+          "#DA8565",
+          "#F5B298",
+          "#FFE3D1"
+        ]
+      },
+      "boia-suave": {
+        "role": "secondary",
+        "displayName": "Boia Suave",
+        "canonical": "#FBE3D5",
+        "tonalRamp": [
+          "#0F0A07",
+          "#2B221C",
+          "#4A3C34",
+          "#6B594F",
+          "#8D796D",
+          "#AC9B90",
+          "#CFC1B9",
+          "#F6ECE7"
+        ]
+      },
+      "capa": {
+        "role": "neutral",
+        "displayName": "Capa",
+        "canonical": "#0F2A25",
+        "tonalRamp": [
+          "#060D0B",
+          "#1A2724",
+          "#314440",
+          "#4B645E",
+          "#69847E",
+          "#8DA49F",
+          "#B7C9C4",
+          "#E6F2EF"
+        ]
+      },
+      "capa-pauta": {
+        "role": "neutral",
+        "displayName": "Pauta da Capa",
+        "canonical": "#1C3E37",
+        "tonalRamp": [
+          "#040D0B",
+          "#172824",
+          "#2E4540",
+          "#46655E",
+          "#64857D",
+          "#8AA59E",
+          "#B4CAC4",
+          "#E4F2EE"
+        ]
+      },
+      "capa-texto": {
+        "role": "neutral",
+        "displayName": "Texto da Capa",
+        "canonical": "#E6EFEB",
+        "tonalRamp": [
+          "#0A0C0B",
+          "#212523",
+          "#3C413F",
+          "#595F5C",
+          "#787F7C",
+          "#9AA09D",
+          "#C0C5C3",
+          "#ECEFEE"
+        ]
+      },
+      "capa-texto-2": {
+        "role": "neutral",
+        "displayName": "Texto Claro da Capa",
+        "canonical": "#A3D6C4",
+        "tonalRamp": [
+          "#030E0A",
+          "#122922",
+          "#27473D",
+          "#3E675A",
+          "#5B8879",
+          "#83A89B",
+          "#AFCCC1",
+          "#E0F4EC"
+        ]
+      },
+      "capa-carimbo": {
+        "role": "primary",
+        "displayName": "Azul de Carimbo sobre Capa",
+        "canonical": "#A9C4F5",
+        "tonalRamp": [
+          "#050B17",
+          "#192438",
+          "#30405D",
+          "#495E84",
+          "#667EA8",
+          "#8B9FC3",
+          "#B5C5E1",
+          "#E4EFFF"
+        ]
+      },
+      "capa-boia": {
+        "role": "secondary",
+        "displayName": "Laranja de Boia sobre Capa",
+        "canonical": "#FF8B4D",
+        "tonalRamp": [
+          "#1E0100",
+          "#441000",
+          "#6E2500",
+          "#9B3C00",
+          "#C25B1C",
+          "#DC8559",
+          "#F7B290",
+          "#FFE3CC"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Só o h1 da abertura, até três linhas."
+      },
+      "figure": {
+        "displayName": "Número do Livro",
+        "purpose": "Valores dos lançamentos em azul de carimbo, unidade em small."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "h2 de cada seção."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3 de partes, passos e etapas."
+      },
+      "stamp": {
+        "displayName": "Carimbo",
+        "purpose": "Rótulos carimbados em maiúsculas; de 0.86rem a clamp(3rem, 2rem + 4vw, 5.6rem)."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Subtítulo da abertura, máx. 36rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido, 30ch a 60ch."
+      },
+      "label": {
+        "displayName": "Máquina de Escrever",
+        "purpose": "Protocolos, rótulos de campo, datas, fontes dos números, valores de conta."
+      }
+    },
+    "shadows": [
+      {
+        "name": "folha-solta",
+        "value": "0 18px 30px -24px rgba(19,34,30,.5)",
+        "purpose": "Ficha de protocolo sobre o livro."
+      },
+      {
+        "name": "aparelho",
+        "value": "0 30px 50px -28px rgba(10,25,21,.6), 0 2px 0 rgba(255,255,255,.06) inset",
+        "purpose": "Celular da simulação."
+      },
+      {
+        "name": "levantar",
+        "value": "0 6px 14px -8px rgba(19,34,30,.45)",
+        "purpose": "Botões no hover, com subida de 2px."
+      },
+      {
+        "name": "carimbo-duplo",
+        "value": "inset 0 0 0 2px var(--papel-2), inset 0 0 0 3.5px currentColor",
+        "purpose": "Segundo aro do carimbo de maior peso; tinta, não elevação."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-papel",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Hover de botões (.18s), sublinhado do menu (.25s), giro do selo de passo, zoom de foto (.5s)."
+      },
+      {
+        "name": "ease-balao",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Entrada dos balões da conversa: opacidade .35s, subida de 8px em .45s."
+      },
+      {
+        "name": "ease-batida",
+        "value": "cubic-bezier(.3,1.5,.5,1)",
+        "purpose": "Batida do carimbo: de escala 1.9 com desfoque 3px para escala 1 em .32s."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration:.01ms; animation-duration:.01ms",
+        "purpose": "Sob prefers-reduced-motion tudo fica estático; a sequência da ficha só roda com JS, movimento permitido e botão de pausa."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "conta-compacta",
+        "value": "max-width: 560px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lancamentos",
+        "value": "860px"
+      },
+      {
+        "name": "md",
+        "value": "960px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "nav",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão cheio (capa)",
+      "kind": "button",
+      "refersTo": "button-primary-capa",
+      "description": "Ação principal: laranja de boia com texto escuro #1A0D05 (8.2:1), como na capa.",
+      "html": "<div class=\"ds-capa\"><a class=\"ds-bt ds-bt-cheio\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h14M13 6l6 6-6 6\"/></svg>Falar com a equipe</a></div>",
+      "css": ".ds-capa{background:#0F2A25;padding:24px}.ds-bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:6px;font:500 1.0625rem/1.2 'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif;text-decoration:none;border:2px solid #E6EFEB;color:#E6EFEB;background:transparent;cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s}.ds-bt svg{width:20px;height:20px;flex:none}.ds-bt:hover{transform:translateY(-2px);box-shadow:0 6px 14px -8px rgba(19,34,30,.45)}.ds-bt:active{transform:translateY(1px);box-shadow:none}.ds-bt:focus-visible{outline:3px solid #FF8B4D;outline-offset:3px;border-radius:3px}.ds-bt-cheio{background:#FF8B4D;border-color:#FF8B4D;color:#1A0D05}"
+    },
+    {
+      "name": "Botão contorno",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Ação secundária: borda de 2px e texto em tinta, fundo transparente.",
+      "html": "<a class=\"ds-bt-c\" href=\"#\">Ver os cinco passos</a>",
+      "css": ".ds-bt-c{display:inline-flex;align-items:center;min-height:52px;padding:12px 22px;border-radius:6px;font:500 1.0625rem/1.2 'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif;text-decoration:none;border:2px solid #13221E;color:#13221E;background:transparent;cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s}.ds-bt-c:hover{transform:translateY(-2px);box-shadow:0 6px 14px -8px rgba(19,34,30,.45)}.ds-bt-c:active{transform:translateY(1px);box-shadow:none}.ds-bt-c:focus-visible{outline:3px solid #D9530F;outline-offset:3px;border-radius:3px}"
+    },
+    {
+      "name": "Carimbo",
+      "kind": "chip",
+      "refersTo": "stamp",
+      "description": "Rótulo carimbado, girado, com tinta irregular. Azul para conferido, laranja (boia-texto) para estimativa e destaque, duplo para o de maior peso.",
+      "html": "<div class=\"ds-carimbos\"><span class=\"ds-carimbo\" style=\"--r:-3deg\">Maré de sizígia</span><span class=\"ds-carimbo\" style=\"--r:2deg\">Ondas conferidas</span><span class=\"ds-carimbo ds-laranja ds-duplo\" style=\"--r:-4deg\">Confiança 80/100</span></div>",
+      "css": ".ds-carimbos{display:flex;flex-wrap:wrap;gap:12px 10px;align-items:center;padding:16px;background:#FFFFFF}.ds-carimbo{display:inline-flex;align-items:center;font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;line-height:1;color:#1E3F7F;border:2.5px solid currentColor;border-radius:5px;padding:.42em .6em .36em;transform:rotate(var(--r,-2deg));white-space:nowrap;-webkit-mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.7 1.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.7 1.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");-webkit-mask-size:140px;mask-size:140px;transition:transform .32s cubic-bezier(.3,1.5,.5,1)}.ds-carimbo:hover{transform:rotate(var(--r,-2deg)) scale(1.04)}.ds-laranja{color:#A8400B;font-size:1.25rem}.ds-duplo{box-shadow:inset 0 0 0 2px #FFFFFF,inset 0 0 0 3.5px currentColor}"
+    },
+    {
+      "name": "Ficha de protocolo",
+      "kind": "card",
+      "refersTo": "ficha",
+      "description": "Folha solta pautada com número de registro, campos datilografados e tarja de dado protegido.",
+      "html": "<div class=\"ds-ficha\"><div class=\"ds-ficha-cab\"><b>Registro nº 0142</b><span>simulação</span></div><dl><div class=\"ds-campo\"><dt>Local</dt><dd>São Miguel, Ilhéus</dd></div><div class=\"ds-campo\"><dt>Maré</dt><dd>sizígia</dd></div><div class=\"ds-campo\"><dt>Relator</dt><dd><span class=\"ds-tarja\"></span>nome protegido</dd></div></dl></div>",
+      "css": ".ds-ficha{max-width:340px;background:#FFFFFF;color:#13221E;border:1px solid #C3D6D0;border-radius:4px;padding:20px 20px 18px 30px;position:relative;box-shadow:0 18px 30px -24px rgba(19,34,30,.5);background-image:repeating-linear-gradient(to bottom,transparent 0 27px,#DDEBE7 27px 28px);background-position:0 54px;transition:transform .18s cubic-bezier(.2,.8,.2,1)}.ds-ficha:hover{transform:rotate(-.4deg)}.ds-ficha::before{content:\"\";position:absolute;left:18px;top:0;bottom:0;width:1.5px;background:#C3D6D0}.ds-ficha-cab{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:2px solid #13221E;padding-bottom:8px;margin-bottom:6px}.ds-ficha-cab b{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:600;font-size:1.3rem;letter-spacing:.02em}.ds-ficha-cab span{font-family:'Courier Prime','Courier New',monospace;font-size:.75rem;color:#4A5D57;text-transform:uppercase}.ds-ficha dl{margin:0}.ds-campo{display:grid;grid-template-columns:62px 1fr;gap:8px;min-height:28px;align-items:baseline;padding-top:3px}.ds-campo dt{font-family:'Courier Prime','Courier New',monospace;font-size:.72rem;color:#4A5D57;text-transform:uppercase}.ds-campo dd{margin:0;font-family:'Courier Prime','Courier New',monospace;font-size:.84rem;line-height:1.6}.ds-tarja{display:inline-block;background:#0B1210;border-radius:1px;width:7.5em;height:.9em;vertical-align:-.05em;margin-right:6px}"
+    },
+    {
+      "name": "Lançamento",
+      "kind": "custom",
+      "refersTo": "figure",
+      "description": "Linha do livro: número condensado em azul, descrição e fonte datilografada, sob borda de 2px em tinta.",
+      "html": "<div class=\"ds-livro\"><div class=\"ds-lanc\"><span class=\"ds-valor\">+4 <small>km</small></span><p>de costa em erosão em Ilhéus</p><p class=\"ds-fonte\">Fonte: decretos municipais de Ilhéus</p></div><div class=\"ds-lanc\"><span class=\"ds-valor\">1/5</span><p>da costa baiana já mostra sinais de erosão</p><p class=\"ds-fonte\">Fonte: SEMA-BA</p></div></div>",
+      "css": ".ds-livro{border-top:2px solid #13221E;color:#13221E;font-family:'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif;background:#F5F8F6}.ds-lanc{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);gap:6px 24px;align-items:center;padding:20px 0 18px;border-bottom:1px solid #C3D6D0}.ds-lanc p{margin:0}.ds-valor{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:600;font-size:3rem;line-height:.95;color:#1E3F7F;letter-spacing:-.01em;font-variant-numeric:lining-nums}.ds-valor small{font-size:1.6rem;letter-spacing:0}.ds-fonte{font-family:'Courier Prime','Courier New',monospace;font-size:.82rem;color:#4A5D57}"
+    },
+    {
+      "name": "Trilho de etapas",
+      "kind": "custom",
+      "refersTo": "capa",
+      "description": "Feito em traço e pino cheios; planejado em tracejado. Sobre capa.",
+      "html": "<ol class=\"ds-rota\"><li class=\"ds-etapa ds-feito\"><span class=\"ds-pino\"></span><span class=\"ds-quando\">2026 · concluído</span><b>Protótipo premiado</b></li><li class=\"ds-etapa\"><span class=\"ds-pino\"></span><span class=\"ds-quando\">2027</span><b>Piloto em Ilhéus</b></li><li class=\"ds-etapa\"><span class=\"ds-pino\"></span><span class=\"ds-quando\">2028</span><b>Litoral da Bahia</b></li></ol>",
+      "css": ".ds-rota{list-style:none;margin:0;padding:28px 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;background:#0F2A25;color:#E6EFEB;font-family:'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif}.ds-etapa{position:relative;display:grid;gap:4px;align-content:start}.ds-etapa::before{content:\"\";position:absolute;left:30px;right:-24px;top:12px;border-top:2px dashed #A3D6C4;opacity:.6}.ds-etapa:last-child::before{display:none}.ds-feito::before{border-top-style:solid;border-color:#FF8B4D;opacity:1}.ds-pino{width:26px;height:26px;border-radius:50%;border:2.5px dashed #A3D6C4;background:#0F2A25;margin-bottom:12px;position:relative;transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-etapa:hover .ds-pino{transform:rotate(-6deg)}.ds-feito .ds-pino{border-style:solid;border-color:#FF8B4D;background:#FF8B4D}.ds-quando{font-family:'Courier Prime','Courier New',monospace;font-size:.88rem;color:#FF8B4D}.ds-etapa b{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:500;font-size:1.3rem;line-height:1.1}"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "refersTo": "theme-toggle",
+      "description": "Topbar fixa em papel translúcido; links com sublinhado de boia que cresce no hover; botão de tema de 44px.",
+      "html": "<header class=\"ds-topo\"><a class=\"ds-marca\" href=\"#\">M.A.R.É</a><nav><a href=\"#\">Problema</a><a href=\"#\">Como funciona</a><a href=\"#\">Negócio</a></nav><button class=\"ds-tema\" aria-label=\"Alternar tema\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2\"/></svg></button></header>",
+      "css": ".ds-topo{display:flex;align-items:center;gap:24px;height:64px;padding:0 20px;background:color-mix(in srgb,#F5F8F6 90%,transparent);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid #C3D6D0;color:#13221E}.ds-marca{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:600;font-size:1.5rem;letter-spacing:.06em;text-decoration:none;color:inherit;margin-right:auto}.ds-topo nav{display:flex;gap:4px}.ds-topo nav a{position:relative;text-decoration:none;color:#4A5D57;font:400 .95rem 'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif;padding:8px 10px;border-radius:4px;transition:color .2s}.ds-topo nav a::after{content:\"\";position:absolute;left:10px;right:10px;bottom:4px;height:2px;background:#D9530F;transform:scaleX(0);transform-origin:left;transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-topo nav a:hover{color:#13221E}.ds-topo nav a:hover::after{transform:scaleX(1)}.ds-topo nav a:focus-visible,.ds-tema:focus-visible{outline:3px solid #D9530F;outline-offset:3px}.ds-tema{width:44px;height:44px;display:grid;place-items:center;border:1px solid #C3D6D0;border-radius:6px;background:#FFFFFF;color:inherit;cursor:pointer;transition:transform .18s}.ds-tema:hover{transform:translateY(-2px)}.ds-tema:active{transform:translateY(1px)}.ds-tema svg{width:20px;height:20px}"
+    },
+    {
+      "name": "Linha em branco",
+      "kind": "custom",
+      "refersTo": "linha",
+      "description": "O que ainda não existe aparece como linha pautada vazia, oculta para leitores de tela, nunca como texto inventado.",
+      "html": "<div class=\"ds-pessoa\"><span class=\"ds-foto\">GA</span><b>Gabriel</b><span class=\"ds-vazio\" aria-hidden=\"true\"></span></div>",
+      "css": ".ds-pessoa{display:grid;grid-template-columns:76px 1fr;column-gap:18px;align-items:center;padding:14px 0;border-top:2px solid #13221E;border-bottom:1px solid #C3D6D0;font-family:'Atkinson Hyperlegible Next','Segoe UI',system-ui,sans-serif;color:#13221E;background:#F5F8F6}.ds-foto{grid-row:span 2;width:76px;aspect-ratio:1;border-radius:50%;background:#FFFFFF;border:1px solid #C3D6D0;display:grid;place-items:center;font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:75%;font-weight:600;font-size:1.6rem;color:#1E3F7F}.ds-pessoa b{font-weight:500;font-size:1.1rem;line-height:1.3;align-self:end}.ds-vazio{display:block;height:1.2em;border-bottom:1.5px solid #C3D6D0;width:min(240px,80%);align-self:start}"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Livro de Registro da Colônia",
+    "overview": "A página inteira é uma folha do livro de registro de uma colônia de pescadores: papel branco frio pautado em verde-água claro, uma única margem vermelha que desce por todas as seções, e capas no verde-preto do livro ata separando os capítulos. Cada relato vira um lançamento: tem número de protocolo datilografado, campos com rótulo, fonte escrita embaixo de cada número e carimbos levemente tortos que confirmam o que foi conferido. É o \"R\" de M.A.R.É transformado em objeto físico.\n\nA densidade é a de um livro de escrituração: listas em linhas pautadas separadas por fios finos, uma borda superior de 2px abrindo cada registro, números grandes condensados com a fonte em máquina de escrever ao lado. Nada de grade de cards iguais; as informações são lançamentos em linha. A profundidade é de papel sobre mesa, nunca de painel flutuante. O estado se lê pela forma do traço: linha cheia é feito, linha tracejada é planejado, e o que ainda não existe aparece como uma linha pautada em branco, nunca como texto inventado.\n\nO movimento é escasso e tem um só número principal: na abertura, a conversa simulada de WhatsApp preenche a ficha \"Registro nº 0142\" e os carimbos batem nela em sequência. A animação só liga com JS e com movimento permitido, tem botão de pausa, e sem ela tudo aparece estático e completo.",
+    "keyCharacteristics": [
+      "Papel branco frio pautado (linha a cada 32px), nunca creme.",
+      "Uma margem vermelha vertical, a única régua decorativa da página.",
+      "Três tintas: papel, azul de carimbo, laranja de boia.",
+      "Letra de carimbo condensada (Archivo, largura 75) para títulos e números; máquina de escrever (Courier Prime) para protocolos, rótulos e fontes; Atkinson Hyperlegible Next para leitura.",
+      "Carimbos girados com tinta irregular (máscara de ruído).",
+      "Feito = traço cheio; planejado = traço tracejado; ausente = linha pautada vazia.",
+      "Capas escuras no verde do livro ata para capítulos de processo e trajetória."
+    ],
+    "rules": [
+      {
+        "name": "A Regra das Três Tintas",
+        "body": "Papel, azul de carimbo e laranja de boia. Não entra uma quarta cor de acento; a margem vermelha é régua, não tinta.",
+        "section": "colors"
+      },
+      {
+        "name": "A Regra do Laranja Legível",
+        "body": "Laranja como texto sobre papel usa boia-texto (5.77:1); boia puro fica para fundos, traços, pinos e foco. Sobre capa, capa-boia serve como texto (6.57:1).",
+        "section": "colors"
+      },
+      {
+        "name": "A Regra da Capa Autocontida",
+        "body": "Uma banda de capa redefine tinta, tinta-2, linha, carimbo e boia para as suas versões de capa; componentes dentro dela não escolhem cores próprias.",
+        "section": "colors"
+      },
+      {
+        "name": "A Regra da Fonte Datilografada",
+        "body": "Todo número tem a sua fonte em Courier Prime logo ao lado ou abaixo, em tinta-2. Número sem fonte não entra no livro.",
+        "section": "typography"
+      },
+      {
+        "name": "A Regra da Largura 75",
+        "body": "Archivo aparece sempre com `font-stretch: 75%`; nunca na largura normal. Só os pesos 500 e 600 são carregados.",
+        "section": "typography"
+      },
+      {
+        "name": "A Regra da Margem Única",
+        "body": "Uma régua vertical vermelha por página, na calha esquerda, atravessando todas as seções. Nenhum outro elemento usa trilho vertical decorativo em vermelho.",
+        "section": "layout"
+      },
+      {
+        "name": "A Regra do Livro Aberto",
+        "body": "Cada lista de lançamentos abre com uma borda superior de 2px em tinta e separa cada linha com fio de 1px. Lançamento é linha, não card.",
+        "section": "layout"
+      },
+      {
+        "name": "A Regra do Papel Plano",
+        "body": "Lançamentos, partes, tabelas e etapas não têm sombra. Sombra é só para folha solta, aparelho e botão em hover.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do manter a pauta de 32px no papel (`repeating-linear-gradient`, linha de 1px em pauta) e a margem vermelha de 2px na calha esquerda em toda página nova.",
+      "Do escrever a fonte de cada número em Courier Prime, tinta-2, 0.82rem, na mesma linha de lançamento.",
+      "Do usar traço cheio para concluído e tracejado para planejado, sempre com a legenda quando houver mais de uma forma.",
+      "Do mostrar o que falta como linha pautada vazia, oculta para leitores de tela.",
+      "Do girar cada carimbo com um `--r` próprio entre −5° e 4° e manter a máscara de ruído.",
+      "Do usar boia-texto (#A8400B) sempre que o laranja for texto sobre papel claro, inclusive em carimbos laranja pequenos.",
+      "Do redefinir os tokens de tinta dentro de uma capa em vez de colorir componentes à mão.",
+      "Do ligar animações só com JS e movimento permitido, oferecer pausa e deixar o estado final completo e estático sem elas."
+    ],
+    "donts": [
+      "Don't usar papel creme ou amarelado; o papel é branco frio (#F5F8F6).",
+      "Don't adicionar uma quarta cor de acento nem usar a margem vermelha como cor de texto, alerta ou botão.",
+      "Don't organizar dados como fileira de cards iguais com sombra; dados são lançamentos em linha no livro.",
+      "Don't usar Archivo fora da largura 75 nem em pesos além de 500 e 600.",
+      "Don't usar tracejado para algo concluído, nem traço cheio para algo planejado.",
+      "Don't preencher campos ausentes com texto de exemplo ou dado inventado.",
+      "Don't usar sombra dura deslocada ou sombra em lançamentos; sombra só em folha solta, aparelho e botão em hover.",
+      "Don't levar os tokens zap-* para fora da simulação de WhatsApp."
+    ]
+  }
+}

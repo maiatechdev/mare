@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "mare-landing/index.html"
+        ],
+        "createdAt": "2026-11-05T20:39:17.792Z",
+        "reason": "direction contract: ruled register paper is the chosen world's ground material (Livro de Registro, user picked it on the decision page)"
+      },
+      {
+        "rule": "nested-cards",
+        "value": "*",
+        "files": [
+          "mare-landing/index.html"
+        ],
+        "createdAt": "2026-11-05T20:39:19.072Z",
+        "reason": "nesting is the simulated WhatsApp phone UI (phone > screen > bubbles), a demonstration of the product"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "mare-landing/index.html"
+        ],
+        "createdAt": "2026-11-05T20:39:19.730Z",
+        "reason": "full-width sections inset via .wrap; tab-wrap top rule is the ledger rule by design"
+      }
+    ]
+  }
+}

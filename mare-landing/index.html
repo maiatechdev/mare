@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>M.A.R.É · Monitoramento da erosão costeira</title>
+    <meta
+      name="description"
+      content="M.A.R.É: pescadores e marisqueiras relatam a erosão costeira pelo WhatsApp e cada relato vira um registro conferido com maré e ondas, para governos e empresas."
+    />
+    <meta name="theme-color" content="#F5F8F6" />
+    <meta property="og:title" content="M.A.R.É · Monitoramento da erosão costeira pelo WhatsApp" />
+    <meta
+      property="og:description"
+      content="Relatos de pescadores e marisqueiras viram registro auditável sobre a erosão costeira. Piloto em Ilhéus com a Colônia Z-34."
+    />
+    <meta property="og:image" content="assets/equipe/equipe-ocean-hackathon.jpg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23F5F8F6' stroke='%231E3F7F' stroke-width='2.5'/%3E%3Cpath d='M7 18c3-4 6-4 9 0s6 4 9 0' fill='none' stroke='%23D9530F' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75,500;75,600&family=Atkinson+Hyperlegible+Next:wght@400;500&family=Courier+Prime&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-mic" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
+          </g>
+        </symbol>
+        <symbol id="i-conf" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4h0A1.5 1.5 0 0 1 4 14.5z"
+            />
+            <path d="m8.5 10 2.3 2.3 4.7-4.6" />
+          </g>
+        </symbol>
+        <symbol id="i-ondas" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M2.5 8c2.4-2 4.6-2 7 0s4.6 2 7 0 4.6-2 5 0" />
+            <path d="M2.5 13c2.4-2 4.6-2 7 0s4.6 2 7 0 4.6-2 5 0" />
+            <path d="M2.5 18c2.4-2 4.6-2 7 0s4.6 2 7 0 4.6-2 5 0" />
+          </g>
+        </symbol>
+        <symbol id="i-pino" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" />
+            <circle cx="12" cy="10" r="2.4" />
+          </g>
+        </symbol>
+        <symbol id="i-sino" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z" />
+            <path d="M10 20.5a2.2 2.2 0 0 0 4 0" />
+          </g>
+        </symbol>
+        <symbol id="i-sim" viewBox="0 0 24 24">
+          <path
+            d="m4.5 12.5 4.6 4.6L19.5 6.8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-nao" viewBox="0 0 24 24">
+          <path
+            d="M7 12h10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-grupo" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="9" cy="8" r="3" />
+            <path d="M3.5 19a5.5 5.5 0 0 1 11 0" />
+            <circle cx="17" cy="9" r="2.4" />
+            <path d="M15.5 14.2A4.5 4.5 0 0 1 21 18.5" />
+          </g>
+        </symbol>
+        <symbol id="i-trofeu" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M8 4h8v5a4 4 0 0 1-8 0z" />
+            <path
+              d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20.5h7M9.5 17h5v3.5h-5z"
+            />
+          </g>
+        </symbol>
+        <symbol id="i-escudo" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3 5 6v5.5c0 4.4 3 7.9 7 9.5 4-1.6 7-5.1 7-9.5V6z" />
+            <path d="m9 12 2.2 2.2L15.5 10" />
+          </g>
+        </symbol>
+        <symbol id="i-empresa" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M4 20.5V7l6-3v16.5M10 9h7.5a1.5 1.5 0 0 1 1.5 1.5v10M2.5 20.5h19M13.5 13h2M13.5 16.5h2M6.5 10h1M6.5 13.5h1"
+            />
+          </g>
+        </symbol>
+        <symbol id="i-mapa" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3.5 6.5 5.5-2.5 6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5z" />
+            <path d="M9 4v13.5M15 6.5V20" />
+          </g>
+        </symbol>
+        <symbol id="i-rede" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"
+            />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="topo">
+      <div class="wrap">
+        <a class="marca" href="#inicio" aria-label="M.A.R.É, voltar ao início">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="var(--carimbo)" stroke-width="2.5" />
+            <circle
+              cx="20"
+              cy="20"
+              r="13.5"
+              fill="none"
+              stroke="var(--carimbo)"
+              stroke-width="1.2"
+            />
+            <path
+              d="M10 22c3.4-4.5 6.6-4.5 10 0s6.6 4.5 10 0"
+              fill="none"
+              stroke="var(--boia)"
+              stroke-width="2.8"
+              stroke-linecap="round"
+            />
+          </svg>
+          M.A.R.É
+        </a>
+        <nav aria-label="Seções da página">
+          <a href="#problema">Problema</a>
+          <a href="#como">Como funciona</a>
+          <a href="#negocio">Negócio</a>
+          <a href="#mercado">Mercado</a>
+          <a href="#rota">Roadmap</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- 1. HERO -->
+      <section class="hero" id="inicio" aria-labelledby="t-hero">
+        <div class="wrap hero-grade">
+          <div class="hero-txt">
+            <h1 id="t-hero">Quem vê o mar avançar primeiro precisa ser <em>ouvido a tempo.</em></h1>
+            <p class="lead">
+              Pescadores e marisqueiras relatam o avanço do mar por áudio, foto e localização. A
+              M.A.R.É confere cada relato com maré e ondas e entrega a governos e empresas um
+              registro auditável.
+            </p>
+            <div class="acoes">
+              <a class="bt cheio" href="#como">Ver os cinco passos</a>
+              <a class="bt" href="#contato">Falar com a equipe</a>
+            </div>
+            <ul class="fatos">
+              <li>
+                <svg aria-hidden="true"><use href="#i-pino" /></svg
+                ><span
+                  >Piloto em Ilhéus, zona norte, com a Colônia de Pescadores Z-34 e seus mais de 6
+                  mil associados</span
+                >
+              </li>
+              <li>
+                <svg aria-hidden="true"><use href="#i-trofeu" /></svg
+                ><span>2º lugar no Ocean Hackathon® Salvador 2026</span>
+              </li>
+              <li>
+                <svg aria-hidden="true"><use href="#i-ondas" /></svg
+                ><span
+                  >Relatos conferidos com a tábua de marés da Marinha e o Copernicus Marine</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="demo" id="demo">
+            <div
+              class="cel"
+              role="group"
+              aria-label="Conversa simulada no WhatsApp entre um pescador e o agente da M.A.R.É"
+            >
+              <div class="tela">
+                <div class="tela-topo">
+                  <span class="av" aria-hidden="true"
+                    ><svg viewBox="0 0 40 40">
+                      <circle
+                        cx="20"
+                        cy="20"
+                        r="17"
+                        fill="none"
+                        stroke="#1E3F7F"
+                        stroke-width="3"
+                      />
+                      <path
+                        d="M10 22c3.4-4.5 6.6-4.5 10 0s6.6 4.5 10 0"
+                        fill="none"
+                        stroke="#D9530F"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      /></svg
+                  ></span>
+                  <div><b>Agente M.A.R.É</b><small>online</small></div>
+                  <span class="simul">Simulação</span>
+                </div>
+                <div class="chat">
+                  <div class="msg eu" data-t="0">
+                    <div class="audio" aria-label="Áudio de 14 segundos">
+                      <svg class="play" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10.5-6.5z" fill="currentColor" />
+                      </svg>
+                      <span class="onda-audio" aria-hidden="true"
+                        ><i style="height: 30%"></i><i style="height: 55%"></i
+                        ><i style="height: 80%"></i><i style="height: 45%"></i
+                        ><i style="height: 95%"></i><i style="height: 60%"></i
+                        ><i style="height: 35%"></i><i style="height: 70%"></i
+                        ><i style="height: 90%"></i><i style="height: 50%"></i
+                        ><i style="height: 30%"></i><i style="height: 65%"></i
+                        ><i style="height: 85%"></i><i style="height: 40%"></i
+                        ><i style="height: 60%"></i><i style="height: 25%"></i
+                        ><i style="height: 45%"></i><i style="height: 70%"></i
+                        ><i style="height: 35%"></i><i style="height: 20%"></i
+                      ></span>
+                      <span class="dur">0:14</span>
+                    </div>
+                    <span class="hora">05:41</span>
+                  </div>
+                  <div class="msg ag" data-t="1">
+                    Entendi: o mar comeu mais um pedaço perto da barraca e já chega no muro, em São
+                    Miguel. Pode mandar sua localização?<span class="hora">05:41</span>
+                  </div>
+                  <div class="msg eu" data-t="2">
+                    <span class="loc"
+                      ><svg aria-hidden="true"><use href="#i-pino" /></svg>Localização enviada</span
+                    ><span class="hora">05:42</span>
+                  </div>
+                  <div class="msg ag" data-t="3">
+                    Registrado. A maré é de sizígia agora e 2 vizinhos confirmaram este ponto.<br /><span
+                      class="nota"
+                      >confiança 80/100</span
+                    ><span class="hora">05:42</span>
+                  </div>
+                  <div class="msg ag" data-t="5">
+                    Próxima maré grande: sexta. Vou te avisar do seu trecho.<span class="hora"
+                      >05:43</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="ficha"
+              role="group"
+              aria-label="Ficha de registro gerada a partir da conversa simulada"
+            >
+              <div class="ficha-cab"><b>Registro nº 0142</b><span>simulação</span></div>
+              <dl class="campos">
+                <div class="campo">
+                  <dt>Relato</dt>
+                  <dd data-t="1">Mar avançou perto da barraca e chega ao muro</dd>
+                </div>
+                <div class="campo">
+                  <dt>Local</dt>
+                  <dd data-t="2">São Miguel, Ilhéus</dd>
+                </div>
+                <div class="campo">
+                  <dt>Relator</dt>
+                  <dd data-t="2"><span class="tarja" aria-hidden="true"></span>nome protegido</dd>
+                </div>
+                <div class="campo">
+                  <dt>Origem</dt>
+                  <dd data-t="0">áudio de 0:14 e localização</dd>
+                </div>
+              </dl>
+              <div class="carimbos">
+                <span class="carimbo" data-t="3" style="--r: -3deg">Maré de sizígia</span>
+                <span class="carimbo" data-t="3" style="--r: 2deg">Ondas conferidas</span>
+                <span class="carimbo" data-t="3" style="--r: -1deg">2 relatos vizinhos</span>
+                <span class="carimbo laranja grande duplo" data-t="4" style="--r: -4deg"
+                  >Confiança 80/100</span
+                >
+                <span class="carimbo" data-t="5" style="--r: 3deg">Alerta enviado</span>
+              </div>
+            </div>
+
+            <button class="controle" type="button" id="pausar" aria-pressed="false" hidden>
+              <svg class="ic-pausa" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8 5v14M16 5v14"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5v13l10.5-6.5z" fill="currentColor" />
+              </svg>
+              <span>Pausar animação</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PROBLEMA -->
+      <section class="secao" id="problema" aria-labelledby="t-prob">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-prob">A erosão avança e quase ninguém registra onde</h2>
+            <p>
+              A Bahia tem a maior zona costeira do Brasil e o Estado não consegue monitorar cada
+              quilômetro. Quem vê o mar avançar todo dia é a comunidade pesqueira, mas esse saber
+              não vira registro. Sem série histórica não há prova para cobrar obra, e o alerta chega
+              depois que a barraca, a rampa ou o rancho já se foram.
+            </p>
+          </div>
+          <div class="livro">
+            <div class="lanc">
+              <span class="valor">1,9 <small>milhão</small></span>
+              <p class="desc">
+                de brasileiros afetados por erosões, incluindo a costeira, de 2013 a 2024
+              </p>
+              <p class="fonte">Fonte: CNM, soma de todos os tipos de erosão</p>
+            </div>
+            <div class="lanc">
+              <span class="valor">R$ 1,6 <small>bi</small></span>
+              <p class="desc">em prejuízos causados pelas erosões no mesmo período</p>
+              <p class="fonte">Fonte: CNM, soma de todos os tipos de erosão</p>
+            </div>
+            <div class="lanc">
+              <span class="valor">+4 <small>km</small></span>
+              <p class="desc">
+                de costa em erosão em Ilhéus, com emergências decretadas em 2020 e 2023
+              </p>
+              <p class="fonte">Fonte: decretos municipais de Ilhéus</p>
+            </div>
+            <div class="lanc">
+              <span class="valor">1/5</span>
+              <p class="desc">da costa baiana já mostra sinais de erosão</p>
+              <p class="fonte">Fonte: SEMA-BA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. COMO FUNCIONA -->
+      <section class="secao capa" id="como" aria-labelledby="t-como">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-como">Do áudio ao registro em cinco passos</h2>
+            <p>
+              O pescador não instala nada: usa o WhatsApp que já tem. O agente de inteligência
+              artificial transforma o relato em informação conferida, e cada passo deixa sua marca
+              no registro, como no exemplo simulado nº 0142.
+            </p>
+          </div>
+          <ol class="passos">
+            <li class="passo">
+              <span class="selo-passo" aria-hidden="true"
+                ><svg><use href="#i-mic" /></svg></span
+              ><span class="num-passo">nº 1</span>
+              <h3>Relato</h3>
+              <p>O pescador manda áudio, foto e localização pelo WhatsApp.</p>
+              <span class="carimbo" style="--r: -2deg">Áudio e localização</span>
+            </li>
+            <li class="passo">
+              <span class="selo-passo" aria-hidden="true"
+                ><svg><use href="#i-conf" /></svg></span
+              ><span class="num-passo">nº 2</span>
+              <h3>Confirmação</h3>
+              <p>O agente transcreve o áudio e confirma o que entendeu.</p>
+              <span class="carimbo" style="--r: 1.5deg">Relato confirmado</span>
+            </li>
+            <li class="passo">
+              <span class="selo-passo" aria-hidden="true"
+                ><svg><use href="#i-ondas" /></svg></span
+              ><span class="num-passo">nº 3</span>
+              <h3>Validação</h3>
+              <p>
+                O relato é cruzado com maré, ondas e relatos do mesmo ponto e ganha uma nota de
+                confiança.
+              </p>
+              <span class="carimbo laranja" style="--r: -3deg">Confiança 80/100</span>
+            </li>
+            <li class="passo">
+              <span class="selo-passo" aria-hidden="true"
+                ><svg><use href="#i-pino" /></svg></span
+              ><span class="num-passo">nº 4</span>
+              <h3>Registro</h3>
+              <p>O ponto entra no mapa sem expor quem relatou e forma uma série histórica.</p>
+              <span class="carimbo" style="--r: 2deg">Registro nº 0142</span>
+            </li>
+            <li class="passo">
+              <span class="selo-passo" aria-hidden="true"
+                ><svg><use href="#i-sino" /></svg></span
+              ><span class="num-passo">nº 5</span>
+              <h3>Alerta</h3>
+              <p>O pescador recebe o aviso do seu trecho e da próxima maré grande.</p>
+              <span class="carimbo" style="--r: -1.5deg">Alerta enviado</span>
+            </li>
+          </ol>
+          <div class="cruza">
+            <span>Cada relato é conferido com:</span>
+            <span class="carimbo" style="--r: -2deg">Tábua de marés da Marinha</span>
+            <span class="carimbo" style="--r: 1.5deg">Copernicus Marine, ondas</span>
+            <span class="carimbo" style="--r: -1deg">Panorama da Erosão Costeira</span>
+            <span class="carimbo" style="--r: 2deg">Relatos vizinhos</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. PARA QUEM -->
+      <section class="secao" id="para-quem" aria-labelledby="t-quem">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-quem">Três partes, um mesmo registro</h2>
+            <p>Quem relata, quem decide e quem paga recebem, cada um, algo concreto.</p>
+          </div>
+          <div class="partes">
+            <article class="parte">
+              <h3>Pescadores e marisqueiras</h3>
+              <p>
+                Chegamos a eles pela Colônia de Pescadores Z-34, com mais de 6 mil associados em
+                Ilhéus. Quem participa recebe alertas do seu trecho e, pela colônia, a Rede Segura:
+                um apoio para quando o mar leva o rancho, a rampa ou a barraca.
+              </p>
+              <span class="carimbo" style="--r: -3deg">Alimenta</span>
+            </article>
+            <article class="parte">
+              <h3>Prefeituras, Estado e Defesa Civil</h3>
+              <p>
+                Sabem onde não construir e onde conter a erosão primeiro, avisam os trechos críticos
+                antes da maré grande e acompanham se as obras funcionam.
+              </p>
+              <span class="carimbo" style="--r: 2deg">Decide</span>
+            </article>
+            <article class="parte">
+              <h3>Empresas com condicionantes ambientais</h3>
+              <p>
+                Recebem um indicador contínuo, georreferenciado e auditável do território que
+                impactam, útil ao licenciamento e ao relatório ESG, e reduzem o conflito com a
+                comunidade.
+              </p>
+              <span class="carimbo laranja" style="--r: -2deg">Paga</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. MODELO DE NEGÓCIO -->
+      <section class="secao" id="negocio" aria-labelledby="t-neg" style="padding-top: 0">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-neg">Assinatura por território monitorado</h2>
+            <p>
+              O piloto começa com editais. Depois, empresas assinam a M.A.R.É por trecho de costa e
+              prefeituras e Estado licenciam o painel.
+            </p>
+          </div>
+          <div class="neg">
+            <div class="conta">
+              <span class="carimbo laranja est">Estimativa da equipe</span>
+              <h3>Conta do ponto de equilíbrio</h3>
+              <div class="linha-conta">
+                <span>Ticket médio por território (trecho de 5 km)</span><span class="pontos"></span
+                ><b>R$ 7.500/mês</b>
+              </div>
+              <div class="linha-conta menos">
+                <span>Custo variável por território</span><span class="pontos"></span
+                ><b>R$ 2.500/mês</b>
+              </div>
+              <div class="linha-conta">
+                <span>Margem por território</span><span class="pontos"></span><b>R$ 5.000/mês</b>
+              </div>
+              <div class="linha-conta">
+                <span>Custo fixo da operação</span><span class="pontos"></span><b>R$ 25.000/mês</b>
+              </div>
+              <div class="soma">
+                <strong>5 territórios</strong
+                ><span
+                  >pagantes cobrem a operação. Meta: ponto de equilíbrio até o fim de 2028.</span
+                >
+              </div>
+              <p class="aviso">
+                Valores a validar com empresas. O piloto de 12 meses em Ilhéus custa cerca de R$ 250
+                mil e será financiado por edital; a tecnologia custa menos de R$ 2 mil por mês
+                porque usa bases públicas.
+              </p>
+            </div>
+            <div class="fluxo-din" aria-label="Como o valor circula">
+              <div class="no">
+                <span class="ic" aria-hidden="true"
+                  ><svg><use href="#i-empresa" /></svg
+                ></span>
+                <div>
+                  <b>Empresas assinam por território</b>
+                  <p>Pagam pelo monitoramento contínuo do trecho que impactam.</p>
+                </div>
+              </div>
+              <div class="seta" aria-hidden="true"></div>
+              <div class="no">
+                <span class="ic" aria-hidden="true"
+                  ><svg><use href="#i-mapa" /></svg
+                ></span>
+                <div>
+                  <b>A M.A.R.É entrega o indicador e o painel</b>
+                  <p>Série histórica auditável para licenciamento, ESG e decisão pública.</p>
+                </div>
+              </div>
+              <div class="seta trac" aria-hidden="true"></div>
+              <div class="no">
+                <span class="ic" aria-hidden="true"
+                  ><svg><use href="#i-rede" /></svg
+                ></span>
+                <div>
+                  <b>Parte do valor volta às colônias</b>
+                  <p>
+                    Como Rede Segura. A M.A.R.É só faz a ponte e não fica com parte desse repasse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. MERCADO -->
+      <section class="secao" id="mercado" aria-labelledby="t-merc" style="padding-top: 0">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-merc">Mercado contado em trechos de costa</h2>
+            <p>Cada trecho tem cerca de 5 km de costa em erosão e vale R$ 90 mil por ano.</p>
+          </div>
+          <div class="mercado">
+            <div
+              class="quadro"
+              role="img"
+              aria-label="Quadrado do TAM com SAM e SOM desenhados em escala real de área, ambos com cerca de um vigésimo do lado do TAM"
+            >
+              <span class="rot rot-tam">TAM</span>
+              <span class="q sam"></span><span class="q som"></span>
+              <span class="rot rot-sam">SAM e SOM</span>
+              <span class="carimbo laranja">Estimativa</span>
+            </div>
+            <div class="camadas">
+              <div class="camada">
+                <span class="sig">TAM</span><span class="val">R$ 81 mi/ano</span>
+                <p>Cerca de 900 trechos em erosão no Brasil.</p>
+              </div>
+              <div class="camada">
+                <span class="sig">SAM</span><span class="val">R$ 3,3 mi/ano</span>
+                <p>Cerca de 37 trechos na Bahia.</p>
+              </div>
+              <div class="camada som">
+                <span class="sig">SOM</span><span class="val">R$ 2,7 mi/ano</span>
+                <p>30 territórios até 2030.</p>
+              </div>
+              <p class="aviso">Estimativas da equipe. No quadro, as áreas estão em escala real.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CONCORRÊNCIA -->
+      <section class="secao" id="concorrencia" aria-labelledby="t-conc" style="padding-top: 0">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-conc">Comparação com o CoastSnap e os canais de denúncia</h2>
+            <p>
+              Quem já mede a costa não ouve quem vive dela, e quem ouve não confere nem guarda a
+              série histórica.
+            </p>
+          </div>
+          <div class="tab-wrap" role="region" aria-labelledby="t-conc" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">O que entrega</th>
+                  <th scope="col" class="c nos">M.A.R.É</th>
+                  <th scope="col" class="c">CoastSnap</th>
+                  <th scope="col" class="c">Canais de denúncia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Comunidade tradicional relata</th>
+                  <td class="c nos">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Funciona sem ir a uma estação fixa</th>
+                  <td class="c nos">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Validação com dado técnico</th>
+                  <td class="c nos">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Série histórica do recuo da costa</th>
+                  <td class="c nos">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Retorno útil para quem relata</th>
+                  <td class="c nos">
+                    <svg class="ic-sim" role="img" aria-label="sim"><use href="#i-sim" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                  <td class="c">
+                    <svg class="ic-nao" role="img" aria-label="não"><use href="#i-nao" /></svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. ROADMAP -->
+      <section class="secao capa" id="rota" aria-labelledby="t-rota">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-rota">Roadmap do protótipo ao litoral da Bahia</h2>
+            <p>Do 2º lugar no hackathon a 150 km de costa monitorada em 2030.</p>
+          </div>
+          <ol class="rota">
+            <li class="etapa feito">
+              <span class="pino" aria-hidden="true"></span
+              ><span class="quando">2026 · concluído</span>
+              <h3>Protótipo premiado</h3>
+              <p>Conceito e simulação do agente no Ocean Hackathon® Salvador.</p>
+            </li>
+            <li class="etapa">
+              <span class="pino" aria-hidden="true"></span><span class="quando">dez 2026</span>
+              <h3>MVP funcional</h3>
+              <p>Agente real no WhatsApp validando com maré e onda e publicando no mapa.</p>
+            </li>
+            <li class="etapa">
+              <span class="pino" aria-hidden="true"></span
+              ><span class="quando">jan a abr 2027</span>
+              <h3>Teste em Ilhéus</h3>
+              <p>
+                40 pescadores e marisqueiras, 10 pontos fixos e cerca de 150 relatos com a Colônia
+                Z-34.
+              </p>
+            </li>
+            <li class="etapa">
+              <span class="pino" aria-hidden="true"></span><span class="quando">2027</span>
+              <h3>Piloto e primeira empresa</h3>
+              <p>Piloto de 12 meses pago por edital, CNPJ aberto e primeira empresa-âncora.</p>
+            </li>
+            <li class="etapa">
+              <span class="pino" aria-hidden="true"></span><span class="quando">2028 a 2030</span>
+              <h3>Escala</h3>
+              <p>5 territórios em 2028, 15 em 2029 e 30 em 2030, cerca de 150 km de costa.</p>
+            </li>
+          </ol>
+          <div class="legenda-rota">
+            <span><i></i>concluído</span><span><i class="trac"></i>planejado</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. RECONHECIMENTO -->
+      <section class="secao" id="reconhecimento" aria-labelledby="t-prem">
+        <div class="wrap premio">
+          <div class="premio-txt">
+            <span class="carimbo grande duplo">2º lugar</span>
+            <h2 id="t-prem">Premiada no Ocean Hackathon® Salvador 2026</h2>
+            <p>
+              Desafio 6, Olhos da Maré, com a Secretaria do Meio Ambiente da Bahia (SEMA-BA) como
+              parceira do desafio. Na foto, a equipe no Colabore, durante o evento.
+            </p>
+          </div>
+          <figure class="foto-grupo">
+            <img
+              src="assets/equipe/equipe-ocean-hackathon.jpg"
+              alt="Equipe L'acqua by LAMIT reunida segurando a bandeira da LAMIT no Ocean Hackathon Salvador 2026"
+              width="1100"
+              height="1650"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 10. EQUIPE -->
+      <section class="secao" id="equipe" aria-labelledby="t-eq" style="padding-top: 0">
+        <div class="wrap">
+          <div class="cab">
+            <h2 id="t-eq">Equipe L'acqua by LAMIT</h2>
+            <p>
+              Estudantes de engenharia, tecnologia e design da UCSAL e da UFBA, em Salvador. O nome
+              do time vem da LAMIT, a Liga Acadêmica de Maratonas, Inovação e Tecnologia da UCSAL.
+            </p>
+          </div>
+          <ul class="time" id="time"></ul>
+        </div>
+      </section>
+
+      <!-- 11. CONTATO + RODAPÉ -->
+      <footer class="capa fim" id="contato" aria-labelledby="t-fim">
+        <div class="wrap">
+          <div class="fim-grade">
+            <div>
+              <h2 id="t-fim">Parceiros para o piloto em Ilhéus</h2>
+              <p>
+                Procuramos colônias de pescadores, poder público, universidades e empresas com
+                atuação no litoral.
+              </p>
+            </div>
+            <div class="contato">
+              <span class="rot">E-mail da equipe</span>
+              <span class="email vazio" id="email"></span>
+              <div class="acoes" id="email-acoes" hidden>
+                <a class="bt cheio" id="email-link" href="#contato">Enviar e-mail</a>
+                <button class="bt" type="button" id="copiar">Copiar e-mail</button>
+              </div>
+              <span id="copiado" aria-live="polite"></span>
+            </div>
+          </div>
+          <svg
+            class="assinatura"
+            viewBox="0 -50 1000 250"
+            preserveAspectRatio="xMinYMax meet"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <text x="0" y="192" textLength="1000" lengthAdjust="spacing">M.A.R.É</text>
+          </svg>
+          <div class="rod">
+            <span>M.A.R.É · Monitoramento de Alertas e Registros de Erosões</span
+            ><span>L'acqua by LAMIT · Salvador, Bahia · 2026</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/dados.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
