@@ -17,7 +17,9 @@ PRODUCT.md            o que o site precisa comunicar e as regras de conteúdo
 DESIGN.md             sistema visual (cores, tipos, componentes)
 ```
 
-É HTML, CSS e JavaScript puros, sem build. Para ver, abra `mare-landing/index.html` no navegador.
+Site publicado: https://maiatechdev.github.io/mare/ (GitHub Pages, atualiza sozinho a cada push no `main`).
+
+É HTML, CSS e JavaScript puros, sem build. Para ver localmente, abra `mare-landing/index.html` no navegador.
 
 ## Tarefas comuns
 
